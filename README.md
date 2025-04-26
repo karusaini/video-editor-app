@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Video Editor App
 
-## Getting Started
+This is a simple Video Timeline Editor built with **Next.js**, **TypeScript**, **TailwindCSS**, and **React DnD**.  
+It allows users to add, rearrange (drag-and-drop), and remove scenes visually.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- Add new scenes dynamically
+- Drag and drop to rearrange scenes
+- Delete scenes easily
+- Smooth and interactive UI
+- Built with modern React (Hooks, TypeScript)
+- Styled using TailwindCSS and shadcn/ui
+
+---
+
+## 📸 Demo
+
+[Insert your deployed link here if available]
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **TailwindCSS**
+- **React DnD** (Drag and Drop library)
+- **shadcn/ui** (for UI components like Button)
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+Follow these steps to run the project locally:
+
+## Navigate to the project directory
+
+''bash
+cd video-editor-app
+
+## Install dependencies
+
+````bash
+npm install
+
+## Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Open your browser and go to
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How It Works
 
-## Learn More
+Add Scene ➔ Click the ➕ Add Scene button to create a new scene.
 
-To learn more about Next.js, take a look at the following resources:
+Drag Scene ➔ Hold and drag any scene card to rearrange the order.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Delete Scene ➔ Click the ✖ button on a scene card to delete it.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Challenges and Creative Decisions
 
-## Deploy on Vercel
+Used react-dnd for drag-and-drop instead of writing custom drag logic.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensured smooth drag performance using the HTML5Backend.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created a clean, responsive UI with TailwindCSS.
+
+Made sure the project is lightweight and easy to extend.
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/karusaini/video-editor-app
+````
+
+## Vercel Deployment
+
+To deploy this project on Vercel, follow these steps:
+
+Push code to GitHub.
+
+Go to Vercel.
+
+Click New Project.
+
+Connect your GitHub account and select the video-editor-app repository.
+
+Vercel will automatically detect that it is a Next.js project and set up everything for you.
+
+Click Deploy.
+
+Once deployed, you'll get a live preview link that you can share with others.

@@ -23,12 +23,12 @@ function DraggableScene({
   index: number;
   moveScene: (dragIndex: number, hoverIndex: number) => void;
 }) {
-  const [, ref] = useDrag({
+  const [, dragRef] = useDrag({
     type: ItemType.SCENE,
     item: { index },
   });
 
-  const [, drop] = useDrop({
+  const [, dropRef] = useDrop({
     accept: ItemType.SCENE,
     hover: (item: { index: number }) => {
       if (item.index !== index) {
@@ -38,9 +38,17 @@ function DraggableScene({
     },
   });
 
+  // Combine drag and drop refs safely
+  const combinedRef = (node: HTMLDivElement | null) => {
+    if (node) {
+      dragRef(node);
+      dropRef(node);
+    }
+  };
+
   return (
     <div
-      ref={(node) => ref(drop(node))}
+      ref={combinedRef}
       className="w-36 h-24 bg-blue-100 hover:bg-blue-200 flex items-center justify-center rounded-md cursor-move transition-all transform hover:scale-105"
     >
       <p className="text-gray-800 font-medium">{scene.name}</p>

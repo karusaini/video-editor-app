@@ -18,9 +18,7 @@ It allows users to add, rearrange (drag-and-drop), and remove scenes visually.
 
 ## 📸 Demo
 
-[Insert your deployed link here if available]
-
----
+## https://www.loom.com/share/977db5fdf852477dac822645e2ef7259?sid=3ea1b938-d7da-4e82-81fb-68cc3618e117
 
 ## 🛠️ Tech Stack
 
